@@ -8,6 +8,7 @@
     "angular-ui-router": "^1.0.0-beta.1",
     "ng-redux": "^3.4.0-beta.1",
     "normalize.css": "^3.0.3",
+    "redux-devtools-extension": "^2.13.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {

@@ -9,6 +9,7 @@ import { combineReducers } from 'redux';
 // import loggingMiddleware from './loggingMiddleware';
 import ngRedux from 'ng-redux';
 import thunk from 'redux-thunk';
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
 angular.module('app', [
     uiRouter,
@@ -24,7 +25,7 @@ angular.module('app', [
 
     // let reducer = combineReducers(reducers);
 
-    $ngReduxProvider.createStoreWith(reducers, [thunk]);
+    $ngReduxProvider.createStoreWith(reducers, [thunk], [devToolsEnhancer()]);
   })
 
   .component('app', AppComponent);

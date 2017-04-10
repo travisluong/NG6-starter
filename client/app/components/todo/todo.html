@@ -1,0 +1,12 @@
+<navbar></navbar>
+<div>
+  <h1>{{ $ctrl.name }}</h1>
+</div>
+
+<input type="text" ng-model="$ctrl.newTodo">
+
+<button ng-click="$ctrl.addTodo($ctrl.newTodo)">Add</button>
+
+<ul>
+  <li ng-repeat="todo in $ctrl.todos">{{ todo.name }}</li>
+</ul>
